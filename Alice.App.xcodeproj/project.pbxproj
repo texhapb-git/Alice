@@ -57,7 +57,7 @@
 		6926B635213BF01C00CA11B4 /* MoscowPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowPlaces.swift; sourceTree = "<group>"; };
 		6926B637213C882B00CA11B4 /* MapViewController+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
 		6926B639213C89C300CA11B4 /* MapViewController+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+Gestures.swift"; sourceTree = "<group>"; };
-		698484E9213AF1970001F876 /* Apeiron.App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apeiron.App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		698484E9213AF1970001F876 /* Alice.App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alice.App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698484EC213AF1970001F876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698484EE213AF1970001F876 /* MoscowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoscowViewController.swift; sourceTree = "<group>"; };
 		698484F1213AF1970001F876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,10 +65,10 @@
 		698484F6213AF19C0001F876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698484F9213AF19C0001F876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		698484FB213AF19C0001F876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69848500213AF19C0001F876 /* Apeiron.AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Apeiron.AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69848500213AF19C0001F876 /* Alice.AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alice.AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69848504213AF19C0001F876 /* Apeiron_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apeiron_AppTests.swift; sourceTree = "<group>"; };
 		69848506213AF19C0001F876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6984850B213AF19C0001F876 /* Apeiron.AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Apeiron.AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6984850B213AF19C0001F876 /* Alice.AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alice.AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6984850F213AF19C0001F876 /* Apeiron_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apeiron_AppUITests.swift; sourceTree = "<group>"; };
 		69848511213AF19D0001F876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69848521213B1AB20001F876 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -160,9 +160,9 @@
 		698484EA213AF1970001F876 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				698484E9213AF1970001F876 /* Apeiron.App.app */,
-				69848500213AF19C0001F876 /* Apeiron.AppTests.xctest */,
-				6984850B213AF19C0001F876 /* Apeiron.AppUITests.xctest */,
+				698484E9213AF1970001F876 /* Alice.App.app */,
+				69848500213AF19C0001F876 /* Alice.AppTests.xctest */,
+				6984850B213AF19C0001F876 /* Alice.AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		698484E8213AF1970001F876 /* Apeiron.App */ = {
+		698484E8213AF1970001F876 /* Alice.App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69848514213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.App" */;
+			buildConfigurationList = 69848514213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.App" */;
 			buildPhases = (
 				698484E5213AF1970001F876 /* Sources */,
 				698484E6213AF1970001F876 /* Frameworks */,
@@ -231,14 +231,14 @@
 			);
 			dependencies = (
 			);
-			name = Apeiron.App;
+			name = Alice.App;
 			productName = Apeiron.App;
-			productReference = 698484E9213AF1970001F876 /* Apeiron.App.app */;
+			productReference = 698484E9213AF1970001F876 /* Alice.App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		698484FF213AF19C0001F876 /* Apeiron.AppTests */ = {
+		698484FF213AF19C0001F876 /* Alice.AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69848517213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.AppTests" */;
+			buildConfigurationList = 69848517213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.AppTests" */;
 			buildPhases = (
 				698484FC213AF19C0001F876 /* Sources */,
 				698484FD213AF19C0001F876 /* Frameworks */,
@@ -249,14 +249,14 @@
 			dependencies = (
 				69848502213AF19C0001F876 /* PBXTargetDependency */,
 			);
-			name = Apeiron.AppTests;
+			name = Alice.AppTests;
 			productName = Apeiron.AppTests;
-			productReference = 69848500213AF19C0001F876 /* Apeiron.AppTests.xctest */;
+			productReference = 69848500213AF19C0001F876 /* Alice.AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6984850A213AF19C0001F876 /* Apeiron.AppUITests */ = {
+		6984850A213AF19C0001F876 /* Alice.AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6984851A213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.AppUITests" */;
+			buildConfigurationList = 6984851A213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.AppUITests" */;
 			buildPhases = (
 				69848507213AF19C0001F876 /* Sources */,
 				69848508213AF19C0001F876 /* Frameworks */,
@@ -267,9 +267,9 @@
 			dependencies = (
 				6984850D213AF19C0001F876 /* PBXTargetDependency */,
 			);
-			name = Apeiron.AppUITests;
+			name = Alice.AppUITests;
 			productName = Apeiron.AppUITests;
-			productReference = 6984850B213AF19C0001F876 /* Apeiron.AppUITests.xctest */;
+			productReference = 6984850B213AF19C0001F876 /* Alice.AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -298,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 698484E4213AF1970001F876 /* Build configuration list for PBXProject "Apeiron.App" */;
+			buildConfigurationList = 698484E4213AF1970001F876 /* Build configuration list for PBXProject "Alice.App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -311,9 +311,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				698484E8213AF1970001F876 /* Apeiron.App */,
-				698484FF213AF19C0001F876 /* Apeiron.AppTests */,
-				6984850A213AF19C0001F876 /* Apeiron.AppUITests */,
+				698484E8213AF1970001F876 /* Alice.App */,
+				698484FF213AF19C0001F876 /* Alice.AppTests */,
+				6984850A213AF19C0001F876 /* Alice.AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,12 +393,12 @@
 /* Begin PBXTargetDependency section */
 		69848502213AF19C0001F876 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 698484E8213AF1970001F876 /* Apeiron.App */;
+			target = 698484E8213AF1970001F876 /* Alice.App */;
 			targetProxy = 69848501213AF19C0001F876 /* PBXContainerItemProxy */;
 		};
 		6984850D213AF19C0001F876 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 698484E8213AF1970001F876 /* Apeiron.App */;
+			target = 698484E8213AF1970001F876 /* Alice.App */;
 			targetProxy = 6984850C213AF19C0001F876 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2020.07.28;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = N46BF4X43P;
 				INFOPLIST_FILE = Apeiron.App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -555,7 +555,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.places;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.concept360.alice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2020.07.28;
-				DEVELOPMENT_TEAM = 8J39KF9DMS;
+				DEVELOPMENT_TEAM = N46BF4X43P;
 				INFOPLIST_FILE = Apeiron.App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -576,7 +576,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = app.getoutfit.places;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.concept360.alice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -600,7 +600,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apeiron.App.app/Apeiron.App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alice.App.app/Alice.App";
 			};
 			name = Debug;
 		};
@@ -621,7 +621,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apeiron.App.app/Apeiron.App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alice.App.app/Alice.App";
 			};
 			name = Release;
 		};
@@ -668,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		698484E4213AF1970001F876 /* Build configuration list for PBXProject "Apeiron.App" */ = {
+		698484E4213AF1970001F876 /* Build configuration list for PBXProject "Alice.App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69848512213AF19D0001F876 /* Debug */,
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69848514213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.App" */ = {
+		69848514213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69848515213AF19D0001F876 /* Debug */,
@@ -686,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69848517213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.AppTests" */ = {
+		69848517213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69848518213AF19D0001F876 /* Debug */,
@@ -695,7 +695,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6984851A213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Apeiron.AppUITests" */ = {
+		6984851A213AF19D0001F876 /* Build configuration list for PBXNativeTarget "Alice.AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6984851B213AF19D0001F876 /* Debug */,

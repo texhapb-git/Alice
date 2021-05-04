@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Apeiron.App.xcodeproj">
+      location = "self:/Users/texhapb/Desktop/iOS/Pushkin.App/Alice.App.xcodeproj">
    </FileRef>
 </Workspace>
