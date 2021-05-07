@@ -10,7 +10,17 @@ import CoreLocation
 
 /// Places at the first screen which should be pinned on the map
 let countryPlaces: [Place] = [
-    Place(
+    Place(action: .performSegue("MoscowSegue"),
+          address: "Москва, Россия",
+          coordinate: CLLocationCoordinate2D(latitude: 55.755814, longitude: 37.617635),
+          title: "Места съемок в Москве"
+    ),
+    Place(action: .openURL("http://privetsochi.ru/blog/sitiproblem/65445.html"),
+          address: "Адлер, Россия",
+          coordinate: CLLocationCoordinate2D(latitude: 43.438166, longitude: 39.911178),
+          title: "Места съемок в Адлере"
+    ),
+    /*Place(
         action: .openURL("https://ilibrary.ru/text/483/index.html"),
         address: "Эрзурум, Турция",
         coordinate: CLLocationCoordinate2D(latitude: 39.900293, longitude: 41.265891),
@@ -117,5 +127,5 @@ let countryPlaces: [Place] = [
         address: "Пушкин, Санкт-Петербург, Россия",
         coordinate: CLLocationCoordinate2D(latitude: 59.7183, longitude: 30.416),
         title: "Царское село"
-    ),
+    ),*/
 ]

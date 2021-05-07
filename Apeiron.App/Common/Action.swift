@@ -13,10 +13,13 @@ import UIKit
 /// — none: no action
 /// - openURL: open an URL with open(_:options:completionHandler:)
 /// - performSegue: perform a segue with performSegue(withIdentifier:sender:)
+/// - image: open image
+
 enum Action {
     case none
     case openURL(String)
     case performSegue(String)
+    case image(String, String)
     
     /// Performs an action determined by self
     func perform(sender: UIViewController) {
@@ -56,6 +59,19 @@ enum Action {
         case .performSegue(let identifier):
             // perform a segue with given identifier
             sender.performSegue(withIdentifier: identifier, sender: sender)
+            
+        case .image(let name, let text):
+            
+            guard let moscowViewController = sender as? MoscowViewController else {
+                return
+            }
+            
+            moscowViewController.imageName = name
+            moscowViewController.imageText = text
+            
+            // perform a segue to image page
+            moscowViewController.performSegue(withIdentifier: "ImageSegue", sender: sender)
+            
         }
     }
 }

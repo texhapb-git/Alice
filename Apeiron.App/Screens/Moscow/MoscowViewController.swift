@@ -13,11 +13,14 @@ class MoscowViewController: MapViewController {
     
     // The main navigation title
     override var navigationTitle: String {
-        return "Пушкин в Москве"
+        return "Места съемок в Москве"
     }
     
     /// Moscow map view
     @IBOutlet weak var moscowMapView: MKMapView!
+    
+    var imageName: String!
+    var imageText: String!
 
     /// Called when the map view has been loaded
     override func viewDidLoad() {
@@ -29,5 +32,16 @@ class MoscowViewController: MapViewController {
         
         // perform parent's viewDidLoad()
         super.viewDidLoad()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "ImageSegue" else {
+            return
+        }
+        
+        let imageViewController = segue.destination as! ImageViewController
+        imageViewController.name = imageName
+        imageViewController.text = imageText
     }
 }

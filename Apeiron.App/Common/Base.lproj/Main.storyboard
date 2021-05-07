@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBu-Al-gya">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBu-Al-gya">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Пушкин в Москве-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MoscowViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MoscowViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoscowViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MoscowViewController" customModule="Alice_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,16 +36,66 @@
                     <connections>
                         <outlet property="moscowMapView" destination="eLe-H5-W9E" id="CCi-rE-Lcc"/>
                         <segue destination="Omf-fm-tMj" kind="show" identifier="ARSegue" id="znA-ou-tN1"/>
+                        <segue destination="3IB-uY-Tl0" kind="show" identifier="ImageSegue" id="v7p-Nn-VbS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1633" y="12"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Soh-kK-eJ9">
+            <objects>
+                <viewController id="3IB-uY-Tl0" customClass="ImageViewController" customModule="Alice_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Mp-yy-DfW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bE-sn-ZKn">
+                                <rect key="frame" x="0.0" y="71.5" width="375" height="595.5"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QTi-uZ-OkA" appends="YES" id="e6r-3o-8LU"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-gM-J69">
+                                <rect key="frame" x="0.0" y="44" width="375" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bUc-2J-SXj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8bE-sn-ZKn" firstAttribute="top" secondItem="fFo-gM-J69" secondAttribute="bottom" id="5RZ-VH-oZ4"/>
+                            <constraint firstItem="bUc-2J-SXj" firstAttribute="trailing" secondItem="8bE-sn-ZKn" secondAttribute="trailing" id="BCM-vf-UI4"/>
+                            <constraint firstItem="bUc-2J-SXj" firstAttribute="trailing" secondItem="fFo-gM-J69" secondAttribute="trailing" id="Dwb-xR-uaf"/>
+                            <constraint firstItem="bUc-2J-SXj" firstAttribute="bottom" secondItem="8bE-sn-ZKn" secondAttribute="bottom" id="Or1-4a-8OA"/>
+                            <constraint firstItem="fFo-gM-J69" firstAttribute="top" secondItem="bUc-2J-SXj" secondAttribute="top" id="PfF-Yn-7s0"/>
+                            <constraint firstItem="fFo-gM-J69" firstAttribute="leading" secondItem="bUc-2J-SXj" secondAttribute="leading" id="hvM-nI-qcN"/>
+                            <constraint firstItem="8bE-sn-ZKn" firstAttribute="leading" secondItem="bUc-2J-SXj" secondAttribute="leading" id="iI0-aB-tN9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fhd-i8-yuM"/>
+                    <connections>
+                        <outlet property="imageView" destination="8bE-sn-ZKn" id="okW-6S-drv"/>
+                        <outlet property="label" destination="fFo-gM-J69" id="hSW-bc-msP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAN-LA-cn7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QTi-uZ-OkA">
+                    <connections>
+                        <action selector="userTapped:" destination="3IB-uY-Tl0" id="w9Y-2i-PgS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2440.8000000000002" y="359.37031484257875"/>
+        </scene>
         <!--Найдите книгу-->
         <scene sceneID="1lv-aO-Y7s">
             <objects>
-                <viewController storyboardIdentifier="ARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omf-fm-tMj" customClass="ARViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Omf-fm-tMj" customClass="ARViewController" customModule="Alice_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6m4-L7-R6h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,12 +144,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYV-va-5sO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="11"/>
+            <point key="canvasLocation" x="2447" y="-321"/>
         </scene>
         <!--Пушкин в России-->
         <scene sceneID="axE-z0-xbC">
             <objects>
-                <viewController storyboardIdentifier="RussiaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G9b-mT-vZM" customClass="CountryViewController" customModule="Apeiron_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RussiaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G9b-mT-vZM" customClass="CountryViewController" customModule="Alice_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tu0-Xb-hqc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,4 +198,9 @@
             <point key="canvasLocation" x="-38" y="13"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

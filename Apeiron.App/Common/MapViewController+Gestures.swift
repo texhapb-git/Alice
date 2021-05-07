@@ -18,7 +18,7 @@ extension MapViewController {
     ///   - event: the event where the touches belong (not used)
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         // if this is the second touch — perform action
-        if secondTouch {
+        if true { //secondTouch {
             // check if we can get an action from the selected annotation
             guard let action = (mapView.selectedAnnotations.first as? PointAnnotation)?.place.action else {
                 print("\(#function): can't unwrap action")
@@ -35,7 +35,7 @@ extension MapViewController {
             showAllPins()
         } else {
             // next touch would be the second touch
-            secondTouch = true
+            //secondTouch = true
         }
     }
 }
